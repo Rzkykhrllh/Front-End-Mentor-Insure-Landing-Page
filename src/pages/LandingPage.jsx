@@ -5,7 +5,7 @@ import Hero from "../parts/Hero";
 function LandingPage() {
   return (
     <div>
-      <Hero />
+      {/* <Hero /> */}
       <Footer />
     </div>
   );

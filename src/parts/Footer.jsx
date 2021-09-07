@@ -7,11 +7,11 @@ import Pinterest from "../images/icon-pinterest.svg";
 
 function Footer() {
   return (
-    <section className="">
+    <section style={{ backgroundColor: "#E5E5E5" }}>
       {/* content */}
-      <div className="py-16 mx-auto xl:w-xl">
+      <div className="px-8 py-16 mx-auto xl:w-xl lg:w-lg">
         {/* atas */}
-        <div className="flex justify-between bg-red-200">
+        <div className="flex justify-between">
           <img src={Logo} alt="" />
 
           {/* sosmed */}
@@ -27,12 +27,19 @@ function Footer() {
         <div className="mt-8 mb-12 bg-garis" style={{ height: "1px" }} />
 
         {/* bawah */}
-        <div className="flex justify-between text-left ">
+        <div className="flex flex-col flex-wrap justify-between text-center sm:text-left sm:flex-row gap-y-16">
           {footer.map((group, idx) => (
-            <div id="ourcompany" className="space-y-5 mr-44">
-              <p className=" text-garis">{group.title}</p>
+            <div
+              id="ourcompany"
+              className="space-y-5 xl:mr-44 lg:mr-36 sm:mr-20"
+            >
+              <p className=" text-garis" style={{ color: "#7B797E" }}>
+                {group.title}
+              </p>
               {group.item.map((link, idx) => (
-                <p key={group.item + idx}>{link.text}</p>
+                <p key={group.item + idx} style={{ color: "#2C2A35" }}>
+                  {link.text}
+                </p>
               ))}
             </div>
           ))}

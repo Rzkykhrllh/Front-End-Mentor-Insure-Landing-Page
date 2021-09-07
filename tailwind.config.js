@@ -8,6 +8,7 @@ module.exports = {
         garis: "#D9D9D9"
       },
       width:{
+        lg: "1024px",
         xl: "1280px"
       }
     },
