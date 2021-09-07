@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.font-serif-display{
+  font-family: 'DM Serif Display', serif;
+}
+
+.font-karla{
+  font-family: 'Karla', sans-serif;
 }
