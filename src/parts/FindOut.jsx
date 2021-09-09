@@ -3,7 +3,7 @@ import "./index.css";
 
 function FindOut() {
   return (
-    <section className="px-8 py-36">
+    <section className="mx-5 xl:mx-auto py-36 xl:w-xl">
       {/* content */}
 
       <div className="flex flex-col justify-between px-10 py-20 text-white bg-no-repeat md:px-16 lg:px-20 md:flex-row gap-y-10 bg-findout">
