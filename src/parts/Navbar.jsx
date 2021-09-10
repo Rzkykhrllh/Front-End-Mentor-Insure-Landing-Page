@@ -71,13 +71,17 @@ function Nav() {
 
               <div
                 ref={ref}
-                className="px-2 pt-2 pt-12 pb-3 space-y-12 sm:px-3"
+                className="px-2 pt-2 pt-12 pb-3 space-y-10 sm:px-3"
               >
                 {data.map((item, idx) => (
                   <a
                     key={"Mobile" + item.title}
                     href="#"
-                    className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
+                    className={classNames(
+                      item.isActive == true ? "border" : "",
+                      `block py-4 mx-4 text-base font-medium 
+                      text-gray-300  hover:bg-gray-700 hover:text-white`
+                    )}
                   >
                     {item.title}
                   </a>
@@ -102,7 +106,7 @@ const data = [
   {
     title: "BLOG",
     href: "#",
-    isActive: false,
+    isActive: true,
   },
   {
     title: "ACCOUNT",
@@ -115,3 +119,7 @@ const data = [
     isActive: false,
   },
 ];
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
