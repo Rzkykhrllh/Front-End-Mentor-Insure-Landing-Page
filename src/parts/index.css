@@ -5,6 +5,12 @@
   background-size: auto 100%;
 }
 
+.bg-hero-mobile {
+  background-image: url("../images/bg-pattern-intro-left-mobile.svg");
+  position: left top;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 639px) {
   .bg-findout {
     background-image: url("../images//bg-pattern-how-we-work-mobile.svg");
