@@ -2,8 +2,8 @@ import React from "react";
 
 function Differences() {
   return (
-    <section className="mx-5 md:text-left xl:mx-auto xl:w-xl pt-36">
-      <div className="h-px mx-auto mb-10 bg-gray-900 w-36 md:ml-0" />
+    <section className="px-5 mx-5 md:text-left xl:mx-auto xl:w-xl pt-36">
+      <div className="mx-auto mb-10 bg-gray-900 w-36 md:ml-0" />
       <h2
         className="mb-20 text-4xl md:text-6xl font-serif-display"
         style={{ color: "#2c2640" }}
