@@ -2,6 +2,11 @@ import React from "react";
 import imgDeskotop from "../images/image-intro-desktop.jpg";
 import imgMobile from "../images/image-intro-mobile.jpg";
 
+import patternRightDesktop from "../images/bg-pattern-intro-right-desktop.svg";
+import patternLeftDesktop from "../images/bg-pattern-intro-left-desktop.svg";
+import patternRightMobile from "../images/bg-pattern-intro-right-desktop.svg";
+import patternLefttMobile from "../images/bg-pattern-intro-left-desktop.svg";
+
 import "./index.css";
 
 function Hero() {
@@ -11,12 +16,7 @@ function Hero() {
       <div className="w-full bg-dark_purple">
         <div className="relative hidden h-auto px-5 mx-auto lg:block xl:w-xl bg-dark_purple py-28 xl:mx-auto">
           <div id="kiri" className="text-left text-white">
-            <div
-              id="garis"
-              className="mb-16 bg-white"
-              style={{ width: "15%", height: "1px" }}
-            ></div>
-
+            <div id="garis" className="h-px mb-16 bg-white w-36"></div>
             <h1 className=" font-serif-display text-7xl">
               Humanazing
               <br />
@@ -66,6 +66,34 @@ function Hero() {
             </a>
           </div>
         </div>
+      </div>
+
+      {/* pattern */}
+      <div
+        id="pattern-right-desktop"
+        className="absolute top-0 right-0 hidden lg:block"
+        style={{ width: "310px" }}
+      >
+        <img src={patternRightDesktop} />
+      </div>
+
+      <div
+        id="pattern-left-desktop"
+        className="absolute left-0 hidden lg:block"
+        style={{ bottom: "-100px" }}
+      >
+        <img
+          src={patternLeftDesktop}
+          style={{ width: "150px", height: "400px" }}
+        />
+      </div>
+
+      <div
+        id="pattern-left-desktop"
+        className="absolute right-0 z-40 lg:hidden"
+        style={{ width: "130px", bottom: "-150px" }}
+      >
+        <img src={patternRightMobile} />
       </div>
     </section>
   );

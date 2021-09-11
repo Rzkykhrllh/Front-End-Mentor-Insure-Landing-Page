@@ -4,6 +4,8 @@ import Logo from "../images/logo.svg";
 import Hamburger from "../images/icon-hamburger.svg";
 import Close from "../images/icon-close.svg";
 
+import BgPattern from "../images/bg-pattern-mobile-nav.svg";
+
 import "./index.css";
 
 function Nav() {
@@ -72,17 +74,14 @@ function Nav() {
           >
             {(ref) => (
               <div
-                className="fixed w-screen h-screen mt-16 md:hidden"
+                className="relative w-screen h-screen md:hidden"
                 id="mobile-menu"
                 style={{ zIndex: 999, backgroundColor: "#2B282F" }}
               >
                 {/* mobile menu wrapper */}
 
-                <div
-                  ref={ref}
-                  className="px-2 pt-2 pt-12 pb-3 space-y-10 sm:px-3"
-                >
-                  {data.map((item, idx) => (
+                <div ref={ref} className="px-2 pt-12 pb-3 space-y-10 sm:px-3">
+                  {dataMobile.map((item, idx) => (
                     <a
                       key={"Mobile" + item.title}
                       href="#"
@@ -95,6 +94,10 @@ function Nav() {
                       {item.title}
                     </a>
                   ))}
+                </div>
+
+                <div id="bg-pattern-nav-mobile" className="absolute">
+                  <img src={BgPattern} />
                 </div>
               </div>
             )}
@@ -123,11 +126,29 @@ const data = [
     href: "#",
     isActive: false,
   },
-  // {
-  //   title: "VIEW PLANS",
-  //   href: "#",
-  //   isActive: false,
-  // },
+];
+
+const dataMobile = [
+  {
+    title: "HOW WE WORK",
+    href: "#",
+    isActive: false,
+  },
+  {
+    title: "BLOG",
+    href: "#",
+    isActive: false,
+  },
+  {
+    title: "ACCOUNT",
+    href: "#",
+    isActive: false,
+  },
+  {
+    title: "VIEW PLANS",
+    href: "#",
+    isActive: false,
+  },
 ];
 
 function classNames(...classes) {
