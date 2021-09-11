@@ -25,7 +25,9 @@ function Hero() {
             you. Ensure you and your loved ones are protected.
           </p>
 
-          <button className="py-4 border px-7">VIEW PLANS</button>
+          <button className="py-4 border px-7 hover:bg-white hover:text-gray-900">
+            VIEW PLANS
+          </button>
         </div>
         <div id="kanan" className="absolute top-0 right-0 pr-20 pt-28">
           <img src={imgDeskotop} alt="" />
@@ -48,7 +50,10 @@ function Hero() {
             expertise and technology to help you find the plan that's right for
             you. Ensure you and and your loved ones are protected.
           </p>
-          <a href="#" className="px-6 py-4 border">
+          <a
+            href="#"
+            className="px-6 py-4 border hover:bg-white hover:text-gray-900"
+          >
             VIEW PLANS
           </a>
         </div>

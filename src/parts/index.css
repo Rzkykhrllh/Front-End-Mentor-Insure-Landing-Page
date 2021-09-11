@@ -16,3 +16,20 @@
     background-image: url("../images//bg-pattern-how-we-work-mobile.svg");
   }
 }
+
+.media-hover:hover {
+  filter: grayscale(96%) brightness(29%) contrast(90%);
+  -webkit-filter: grayscale(96%) brightness(29%) contrast(90%);
+  -moz-filter: grayscale(96%) brightness(29%) contrast(90%);
+}
+
+.view-plans {
+  border-width: 1.7px;
+  border-color: black;
+}
+
+.view-plans:hover {
+  background-color: #2b282f;
+  color: white;
+  border-color: white;
+}

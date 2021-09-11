@@ -5,6 +5,8 @@ import Twitter from "../images/icon-twitter.svg";
 import Instagram from "../images/icon-instagram.svg";
 import Pinterest from "../images/icon-pinterest.svg";
 
+import "./index.css";
+
 function Footer() {
   return (
     <section style={{ backgroundColor: "#E5E5E5" }}>
@@ -16,10 +18,29 @@ function Footer() {
 
           {/* sosmed */}
           <div className="flex space-x-5 ">
-            <img src={Facebook} alt="" />
-            <img src={Twitter} alt="" />
-            <img src={Pinterest} alt="" />
-            <img src={Instagram} alt="" />
+            <a href="#">
+              <img src={Facebook} alt="Facebook-Icon" className="media-hover" />
+            </a>
+
+            <a href="#">
+              <img src={Twitter} alt="Twitter-Icon" className="media-hover" />
+            </a>
+
+            <a href="#">
+              <img
+                src={Pinterest}
+                alt="Pinterest-Icon"
+                className="media-hover"
+              />
+            </a>
+
+            <a href="#">
+              <img
+                src={Instagram}
+                alt="Instagram-Icon"
+                className="media-hover"
+              />
+            </a>
           </div>
         </div>
 
@@ -37,8 +58,12 @@ function Footer() {
                 {group.title}
               </p>
               {group.item.map((link, idx) => (
-                <p key={group.item + idx} style={{ color: "#2C2A35" }}>
-                  {link.text}
+                <p
+                  key={group.item + idx}
+                  style={{ color: "#2C2A35" }}
+                  className=" hover:underline"
+                >
+                  <a href="">{link.text}</a>
                 </p>
               ))}
             </div>

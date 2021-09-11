@@ -4,6 +4,8 @@ import Logo from "../images/logo.svg";
 import Hamburger from "../images/icon-hamburger.svg";
 import Close from "../images/icon-close.svg";
 
+import "./index.css";
+
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -22,11 +24,17 @@ function Nav() {
                   {data.map((item, index) => (
                     <a
                       href={item.href}
-                      className="px-3 py-2 text-gray-700 rounded-md hover:bg-gray-700 font-karla"
+                      className="px-3 py-2 font-medium text-gray-500 hover:text-black font-karla"
                     >
                       {item.title}
                     </a>
                   ))}
+                  <a
+                    href="#"
+                    className="px-3 py-2 font-medium text-gray-900 view-plans font-karla"
+                  >
+                    VIEW PLANS
+                  </a>
                 </div>
               </div>
             </div>
@@ -106,18 +114,18 @@ const data = [
   {
     title: "BLOG",
     href: "#",
-    isActive: true,
+    isActive: false,
   },
   {
     title: "ACCOUNT",
     href: "#",
     isActive: false,
   },
-  {
-    title: "VIEW PLANS",
-    href: "#",
-    isActive: false,
-  },
+  // {
+  //   title: "VIEW PLANS",
+  //   href: "#",
+  //   isActive: false,
+  // },
 ];
 
 function classNames(...classes) {

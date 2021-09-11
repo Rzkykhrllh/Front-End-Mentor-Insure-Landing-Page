@@ -13,7 +13,10 @@ function FindOut() {
         </h3>
 
         <div className="flex justify-center my-auto">
-          <a href="#" className="px-5 py-3 border md:py-4">
+          <a
+            href="#"
+            className="px-5 py-3 border md:py-4 hover:bg-white hover:text-gray-900"
+          >
             HOW WE WORK
           </a>
         </div>
